@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akulaku Store</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="public/img/logo.png" />
+
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <!-- ****************************** -->
+        <!--BAGIAN TOP-BAR -->
+        <!-- ****************************** -->
+        <div class="top-bar">
+            <!-- to make the navbar right-aligned, using ml-auto -->
+            <div class="order-bar text-right">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary-outline text-primary border-light">Gift Card</button>
+                    <button type="button" class="btn btn-primary-outline text-primary border-light"">Track Order</button>
+                    <button type="button" class="btn btn-primary-outline text-primary border-light"">Contact Us</button>
+                </div>
+            </div>
+            <div class="search-bar">
+                <!-- Image and text -->
+                <nav class="navbar navbar-light bg-transparent">
+                    <a class="navbar-brand"><img src="public/img/logo.png" width="200"></a>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </nav>
+            </div>
+    
+        </div>
+
+        <!-- ****************************** -->
+        <!-- BAGIAN MENU-BAR -->
+        <!-- ****************************** -->
+        <div class="menu-bar sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary" style="border-radius: 20px; height: 100%;">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color: white;">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container text-center">
+            
+            <div class="konten">
+
+                <div class="row">
+
+                    <!-- ****************************** -->
+                    <!--BAGIAN SIDEBAR-KIRI -->
+                    <!-- ****************************** -->
+                    <div class="col-lg-2 col-sm-12">
+                        <div class="sidebar-kiri">
+                            <div class="list-group">
+                                <p class="list-group-item list-group-item-action disabled bg-transparent border-0" style="color: green;"><b>Kategori</b></p>
+                                <a href="#" class="list-group-item list-group-item-action active">Komputer & IT</a>
+                                <a href="#" class="list-group-item list-group-item-action">Elektronik</a>
+                                <a href="#" class="list-group-item list-group-item-action">Olahraga</a>
+                                <a href="#" class="list-group-item list-group-item-action">Buku</a>
+                                <a href="#" class="list-group-item list-group-item-action">Fashion</a>
+                                <a href="#" class="list-group-item list-group-item-action">Film & Musik</a>
+                                <a href="#" class="list-group-item list-group-item-action">Gaming</a>
+                                <a href="#" class="list-group-item list-group-item-action">Handphone & Tablet</a>
+                                <a href="#" class="list-group-item list-group-item-action">Kamera</a>
+                                <a href="#" class="list-group-item list-group-item-action">Kesehatan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ****************************** -->
+                    <!--BAGIAN KONTEN UTAMA -->
+                    <!-- ****************************** -->
+                    <div class="col-lg-7 col-sm-12">
+                        <div class="konten-utama">
+                            <div class="jumbotron bg-transparent">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img class="d-block w-100" src="public/img/slider/slider1.jpg" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="public/img/slider/slider2.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="public/img/slider/slider3.jpg" alt="Third slide">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ****************************** -->
+                        <!--BAGIAN PRODUK -->
+                        <!-- ****************************** -->
+                        <div class="produk">
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12 text-center">
+                                    <div class="card" style="width: 100%;">
+                                        <img class="card-img-top" src="public/img/produk/laptop_1.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">8/10</div>
+                                            </div>
+                                            <br>
+                                            <h5 class="card-title">Office Pro Laptop</h5>
+                                            <p class="card-text">Laptop Professional dengan kemampuan canggih<br><font color="green">Rp4.500.000</font></p>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 text-center">
+                                    <div class="card" style="width: 100%;">
+                                        <img class="card-img-top" src="public/img/produk/head-phones.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">9/10</div>
+                                            </div>
+                                            <br>
+                                            <h5 class="card-title">Head Phone Dummy</h5>
+                                            <p class="card-text">Memberikan pengalaman terbaik anda dalam mendengar<br><font color="green">Rp450.000</font></p>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 text-center">
+                                    <div class="card" style="width: 100%;">
+                                        <img class="card-img-top" src="public/img/produk/keyboard.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">10/10</div>
+                                            </div>
+                                            <br>
+                                            <h5 class="card-title">Office Keyboard</h5>
+                                            <p class="card-text">Memberikan pengalaman terbaik anda dalam mengetik<br><font color="green">Rp500.000</font></p>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12 text-center">
+                                    <div class="card" style="width: 100%;">
+                                        <img class="card-img-top" src="public/img/produk/keyboard.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">10/10</div>
+                                            </div>
+                                            <br>
+                                            <h5 class="card-title">Office Keyboard</h5>
+                                            <p class="card-text">Memberikan pengalaman terbaik anda dalam mengetik<br><font color="green">Rp500.000</font></p>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 text-center">
+                                    <div class="card" style="width: 100%;">
+                                        <img class="card-img-top" src="public/img/produk/laptop_1.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">8/10</div>
+                                            </div>
+                                            <br>
+                                            <h5 class="card-title">Office Pro Laptop</h5>
+                                            <p class="card-text">Laptop Professional dengan kemampuan canggih<br><font color="green">Rp5.500.000</font></p>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 text-center">
+                                    <div class="card" style="width: 100%;">
+                                        <img class="card-img-top" src="public/img/produk/head-phones.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">10/10</div>
+                                            </div>
+                                            <br>
+                                            <h5 class="card-title">Head Phone Dummy</h5>
+                                            <p class="card-text">Memberikan pengalaman terbaik anda dalam mendengar<br><font color="green">Rp450.000</font></p>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- ****************************** -->
+                    <!--BAGIAN SIDEBAR-KANAN -->
+                    <!-- ****************************** -->
+                    <div class="col-lg-3 col-sm-12">
+                        <div class="sidebar-kanan">
+                            <div class="list-group">
+                                <p class="list-group-item list-group-item-action disabled bg-transparent border-0" style="color: green;"><b>Fitur</b></p>
+                                <a href="#" class="list-group-item list-group-item-action">Emas</a>
+                                <a href="#" class="list-group-item list-group-item-action">BPJS</a>
+                                <a href="#" class="list-group-item list-group-item-action">Pulsa</a>
+                                <a href="#" class="list-group-item list-group-item-action">Pinjaman Online</a>
+                                <a href="#" class="list-group-item list-group-item-action">Pajak</a>
+                                <a href="#" class="list-group-item list-group-item-action">OVO</a>
+                                <a href="#" class="list-group-item list-group-item-action">Listrik PLN</a>
+                                <a href="#" class="list-group-item list-group-item-action">Asuransi</a>
+                                <a href="#" class="list-group-item list-group-item-action">Kartu Kredit</a>
+                                <a href="#" class="list-group-item list-group-item-action">Voucher Game</a>
+                            </div>
+                        </div>
+                        <div class="ext-link">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="card" style="width: 100%;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">External Links</h5>
+                                            <button type="button" class="btn btn-primary btn-lg btn-block">Our Partners</button>
+                                            <button type="button" class="btn btn-warning btn-lg btn-block">Customer Reviews</button>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <footer>
+            <p>Copyright &copy; Akulaku Store - 2020</p>
+        </footer>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

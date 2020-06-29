@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan DOM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style type="text/css">
+        
+        .card{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card img{
+            object-fit: cover;
+            width: 340px;
+            height: 200px;
+        }
+
+        .barang{
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand">Mini Ecommerce</a>
+            <form class="form-inline" id="formItem">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search"  id="keyword" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchItem">Search</button>
+            </form>
+            <button class="btn btn-primary" id="cart"><i class="fas fa-shopping-cart"></i>(<span id="items">0</span>)</button>
+        </nav>
+        <div class="barang">
+            <div class="row">
+                <div class="col-md-12 mt-2"  id="listBarang" >
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="set.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+body{
+	background: url('../img/pattern.jpg');
+	margin: 0;
+	padding: 0;
+	font-family: Slabo; 
+}
+
+#outer{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.contain{
+	width: 800px;
+	background: white;
+	margin: 20px auto;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+/* Bagian [HEADER] */
+header{
+	height: 55px;
+	background: white;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: sticky;
+	z-index: 9999;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+header img:hover{
+	padding: 1px;			
+}
+
+#logo{
+	float: left;
+}
+
+ul{
+	margin: 8px;
+	margin-right: 20px;
+	padding: 0;
+	float: right;
+}
+
+ul li{
+	float: left;
+	list-style: none;
+	padding: 8px 15px;
+	display: block;
+	border-right: 1px dotted #ccc;
+	border-left: 1px dotted #ccc;
+}
+
+ul a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #4353AC;
+}
+
+ul a:hover{
+	color: #1F326A;
+}
+
+/* Bagian [SECTION] */
+
+.ribbon .yt{
+	top: -0.5px;
+	position: absolute;
+}
+
+.ribbon .yt:hover{
+	padding: 0.5px;
+}
+
+section{
+	padding: 20px;
+}
+
+section h1{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/* Bagian [ARTIKEL] */
+article{
+	margin-bottom: 10px;
+	border-bottom: 3px solid #ccc;
+}
+
+article a{
+	text-decoration: none;
+	color: #4353AC;
+	font-size: 15px;
+}
+
+article a h3{
+	display: inline-block;
+	margin: 0;
+}
+
+article a h3:hover{
+	color: #212388;
+}
+
+article p{
+	text-align: justify;
+	user-select: all;
+}
+
+/* Bagian [FOOTER] */
+footer{
+	background: black;
+
+	height: 40px;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+footer h5{
+	text-align: center;
+	color: white;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+
+/* Clear fix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}

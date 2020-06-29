@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+	background-image: url("../img/pattern.jpg");
+}
+nav {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family: arial;
+  padding: 0 5%;
+  height: 50px;
+  background-color:white;
+}
+nav .logo {
+  float: left;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav .links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .links li {
+  list-style: none;
+}
+
+nav .links a {
+  display: block;
+  padding: 1em;
+  font-size: 10px;
+  font-weight: bold;
+  color:black;
+  text-decoration: none;
+}
+li a:hover{
+  background-color: gainsboro;
+}
+#nav-toggle {
+  position: absolute;
+  top: -50px;
+}
+nav .icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav .icon-burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+}
+
+.main {
+  padding-top: 50px;
+  max-width:1000px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+h4 {
+  text-align: center;
+  word-break: break-all;
+  padding-bottom: 10px;
+}
+h4 > a {
+  /* text-decoration: none; */
+  color: black;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.3%;
+}
+
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 3px;
+  border-color: gray;
+}
+.content p {
+  font-size: 12px;
+  font-family: arial;
+}
+
+
+/* footer */
+.footer {
+  background-color: #333;
+  height: 50px;
+  padding-top:15px;
+}
+.footer p{
+  font-size:12px;
+  text-align: center;
+  font-family: Arial;
+  color: white;
+}
+
+/* Media max 768 */
+@media screen and (max-width: 768px) {
+  nav .links {
+    width: 50%;
+  }
+  .column {
+    width: 50%;
+  }
+}
+
+
+/* Media max 500px */
+@media screen and (max-width: 576px) {
+  nav .logo {
+    float: none;
+    width: auto;
+    justify-content: center;
+  }
+  nav .links{
+    float: none;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+  }
+  li a:hover {
+    background-color: white;
+  }
+  nav .links a {
+    font-size: 12px;
+  }
+  nav :checked ~ .links {
+    bottom: 0;
+  }
+  nav .icon-burger {
+    display: block;
+  }
+  nav :checked ~ .icon-burger .line:nth-child(1){
+    transform: translateY(10px) rotate(225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(3){
+    transform: translateY(-10px) rotate(-225deg);
+  }
+  nav :checked ~ .icon-burger .line:nth-child(2){
+    opacity: 0;
+  }
+
+
+  /* column */
+  .column {
+    width: 100%;
+  }
+}

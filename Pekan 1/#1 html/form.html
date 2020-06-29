@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+    <title>SanberBook-SignUp</title>
+    <style type="text/css">
+
+        body{
+            background: url('background.png');
+        }
+
+        .container{
+            padding: 20px;
+            border: 5px solid #ccc;
+            width: 500px;
+            border-radius: 10px;
+            margin: auto;   
+        }
+
+        .opt{
+            margin: 0;
+            padding: 0;
+            margin-left: 10px;
+        }
+
+        .opt li{
+            list-style: none;
+        }
+
+        button{
+            padding: 5px 10px;
+            background-color: lightskyblue;
+            color: black;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body bgcolor="#4F82C8">
+
+    <div class="container">
+        
+        <header> <h1 align="center">Buat Account Baru!</h1></header>
+        <h3>Sign Up Form</h3>
+
+        <form action="welcome.html">
+            <table border="0" cellpadding="5" cellspacing="3">
+               
+               <tr><td><b>First name:</b></td></tr>
+               <tr><td><input type="text" name="nm_depan"></td></tr>
+
+               <tr><td><b>Last name:</b></td></tr>
+               <tr><td><input type="text" name="nm_blkg"></td></tr>
+
+               <tr><td><b>Gender:</b></td></tr>
+                <tr><td>
+                    <ul class="opt">
+                        <li><input type="radio" name="gender" value="male">Male</li>
+                        <li><input type="radio" name="gender" value="female">Female</li>
+                        <li><input type="radio" name="gender" value="other">Other</li>
+                    </ul>
+                </td></tr>
+
+                <tr><td><b>Nationality:</b></td></tr>
+                <tr>
+                    <td>
+                        <select name="negara">
+                            <option value="indonesia">Indonesian</option>
+                            <option value="singapura">Singaporean</option>
+                            <option value="malaysia">Malaysian</option>
+                            <option value="australia">Australian</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr><td><b>Language Spoken:</b></td></tr>
+                <tr><td>
+                    <ul class="opt">
+                        <li><input type="checkbox" name="bahasa" value="indonesia">Indonesia</li>
+                        <li><input type="checkbox" name="bahasa" value="english">English</li>
+                        <li><input type="checkbox" name="bahasa" value="other">Other</li>
+                    </ul>
+                </td></tr>
+
+                <tr><td><b>Bio:</b></td></tr>
+                <tr>
+                    <td><textarea cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" name="tb_sign">Sign Up</button></td>
+                </tr>
+
+            </table>
+        </form>
+
+    </div>
+   
+
+</body>
+</html>
+

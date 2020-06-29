@@ -1,0 +1,139 @@
+/*
+==============================
+        JAWABAN NO 1
+==============================
+*/	
+	CREATE DATABASE `myshop`;
+
+/*
+==============================
+        JAWABAN NO 2
+==============================
+*/
+	
+	USE `myshop`;
+
+	DROP TABLE IF EXISTS `users`;
+	DROP TABLE IF EXISTS `items`;
+	DROP TABLE IF EXISTS `categories`;
+
+	CREATE TABLE IF NOT EXISTS users(
+		id INT NOT NULL AUTO_INCREMENT,
+		name VARCHAR(255) NOT NULL,
+		email VARCHAR(255) NOT NULL,
+		password VARCHAR(255) NOT NULL,
+		PRIMARY KEY(id)
+	);
+
+	CREATE TABLE IF NOT EXISTS categories(
+		id INT AUTO_INCREMENT NOT NULL,
+		name VARCHAR(255) NOT NULL,
+		PRIMARY KEY(id)
+	);
+
+	CREATE TABLE IF NOT EXISTS items(
+		id INT NOT NULL AUTO_INCREMENT,
+		name VARCHAR(255) NOT NULL, 
+		description VARCHAR(255) NOT NULL,
+		price INT NOT NULL,
+		stock INT NOT NULL,
+        category_id INT,
+		CONSTRAINT `items_ibfk1` FOREIGN KEY(`category_id`) REFERENCES categories(`id`),
+		PRIMARY KEY(id)
+	);
+
+
+/*
+==============================
+        JAWABAN NO 3
+==============================
+*/
+
+	USE `myshop`;
+
+	INSERT INTO users VALUES('', 'John Doe', 'john@doe.com', 'john123');
+	INSERT INTO users VALUES('', 'Jane Doe', 'jane@doe.com', 'jenita123');
+
+	INSERT INTO categories VALUE('', 'gadget');
+	INSERT INTO categories VALUE('', 'cloth');
+	INSERT INTO categories VALUE('', 'men');
+	INSERT INTO categories VALUE('', 'women');
+	INSERT INTO categories VALUE('', 'branded');
+
+	INSERT INTO items SET
+		name = 'Sumsang b50',
+		description = 'hape keren dari merek sumsang',
+		price = 4000000,
+		stock = 100,
+		category_id = 1
+	;
+	INSERT INTO items SET
+		name = 'Uniklooh',
+		description = 'baju keren dari brand ternama',
+		price = 500000,
+		stock = 50,
+		category_id = 2
+	;
+	INSERT INTO items SET
+		name = 'IMHO Watch',
+		description = 'jam tangan anak yang jujur banget',
+		price = 2000000,
+		stock = 10,
+		category_id = 1
+	;
+
+
+==============================
+        JAWABAN NO 4
+==============================
+
+	USE `myshop`;
+
+	/* [A] Mengambil data users */
+	SELECT id, name, email FROM users;
+
+	/* [B] Mengambil data items */
+	SELECT * FROM items WHERE price > 1000000;
+
+	SELECT * FROM items WHERE name LIKE '%uniklo%';
+
+	/* [C] Mengambil data items join dengan kategori */
+	SELECT items.name, items.description, items.price, items.stock, items.category_id, categories.name AS 'kategori' FROM `items` INNER JOIN categories ON items.category_id = categories.id ORDER BY items.id ASC;
+
+
+==============================
+        JAWABAN NO 5
+==============================
+	
+	USE `myshop`;
+
+	UPDATE items SET 
+		price = 2500000
+	WHERE name = "Sumsang b50";
+
+
+
+
+CREATE TABLE IF NOT EXISTS customers( id INTEGER AUTO_INCREMENT NOT NULL, name VARCHAR(255), email VARCHAR(255), password VARCHAR(255), PRIMARY KEY(id));
+
+
+CREATE TABLE IF NOT EXISTS orders(
+	id INTEGER AUTO_INCREMENT NOT NULL,
+    amount INTEGER NOT NULL,
+    customer_id INTEGER NOT NULL,
+    CONSTRAINT `orders_ibfk1` FOREIGN KEY(`customer_id`) REFERENCES customers(id),
+    PRIMARY KEY(id)
+);
+
+
+INSERT INTO customers VALUES('', "John Doe", "john@doe.com", "john123");
+INSERT INTO customers VALUES('', 'Jane Doe', 'jane@doe.com', 'jenita123');
+
+INSERT INTO orders VALUES("", 500, 1);
+INSERT INTO orders VALUES("", 200, 2);
+INSERT INTO orders VALUES("", 750, 2);
+INSERT INTO orders VALUES("", 250, 1);
+INSERT INTO orders VALUES("", 400, 2);
+
+
+SELECT customers.name AS customer_name, SUM(orders.amount) AS total_amount FROM customers LEFT JOIN orders ON customers.id = orders.customer_id GROUP BY 1 ORDER BY customers.id ASC; 

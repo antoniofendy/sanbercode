@@ -1,0 +1,89 @@
+body{
+    background-image: url('public/img/background/pattern.png');
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.top-bar button:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(23, 106, 161);
+}
+
+.menu-bar{
+    margin-top: 20px;
+}
+
+.menu-bar .navbar-nav.mx-auto .nav-item{
+    margin-right: 10px;
+    margin-left: 10px;
+    display: block;
+}
+
+.menu-bar .navbar-nav.mx-auto .nav-item:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.btn-primary-outline{
+    background-color: transparent;
+    border: none;
+}
+
+/* KONTEN */
+.konten{
+    margin-top: 50px;
+    padding: 10px;
+}
+
+/* SIDEBAR KIRI */
+.sidebar-kiri{
+    margin-top: 10px;
+}
+
+/* KONTEN UTAMA */
+.konten-utama{
+    margin-top: 10px;
+}
+
+.konten-utama .jumbotron{
+    padding: 0px; 
+    border-radius: 20px;
+}
+
+.konten-utama .carousel.slide img{
+    border-radius: 10px;
+}
+
+.produk .card{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* SIDEBAR KANAN */
+.sidebar-kanan{
+    margin-top: 10px;
+}
+
+.ext-link{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer{
+    height: 50px;
+    background-color: rgb(46, 157, 190);
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+footer p{
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome Page</title>
+
+	<style type="text/css">
+
+		body{
+			margin: 0;
+			padding: 0;
+			background: url('background.png');
+		}
+		
+		.top-page{
+			height: 50px;
+			background: orange;
+			color: white;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+
+		.container{
+			position: relative;
+			margin: 40px;
+		}
+
+		.cf:before,
+		.cf:after {
+		    content: " "; /* 1 */
+		    display: table; /* 2 */
+		}
+
+		.cf:after {
+		    clear: both;
+		}
+		.cf {
+		    *zoom: 1;
+		}
+
+	</style>
+
+</head>
+<body>
+	
+
+	<div class="container cf">
+		<div class="top-page"><h3><marquee>SanberBook - Sosial Media Terbaik</marquee></h3></div>
+		<div class="content">
+			<h1>Selamat Datang!</h1>
+			<h3>Terima kasih telah bergabung di Sanberbook. Social Media kita bersama</h3>
+		</div>
+	</div>
+
+</body>
+</html>
