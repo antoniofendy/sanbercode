@@ -37,8 +37,6 @@
     print_r($sungokong);
     print_r($kodok);
 
-    echo "HELLO WORLD";
-
     echo "</pre>";
 
 ?>
